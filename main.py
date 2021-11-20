@@ -20,7 +20,9 @@ def my_form_post():
     #print(display_similar(info, num=5))
     info=request.form.get("productid")
     data = display_similar(info, num=5)
-    return jsonify({"lolz":data})
+    # return jsonify({"lolz":data})
+    return render_template('results.html', title='Results', data=data)
+
 
 
 if __name__ == '__main__':

@@ -1,0 +1,16 @@
+<html>
+    <head>
+        <title>{{ title }}</title>
+    </head>
+    <body>
+        <ol>
+        {% for item in data: %}
+        <li style="color:black;font-size:17px;font-weight: bold">{{ item.title }}</li>
+        <p style="color:blue;font-size:15px">ASIN: {{ item.asin }} Score: {{ item.score }}</p>
+        {% if item.image: %}
+        <img src='{{item.image}}' width="100" height="100">
+        {% endif %}
+	{% endfor %}
+	</ol>
+    </body>
+</html>
