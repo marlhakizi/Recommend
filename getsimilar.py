@@ -99,7 +99,7 @@ def display_similar(the_id,num=10, es_index="products1"):
         
     #print(pd_data)
     #pd_df = pd.DataFrame (pd_data)
-    return pd_data
+    return product,pd_data
     
 #print(display_similar('B0015S4KIO', num=5))
 

@@ -1,8 +1,10 @@
 <html>
     <head>
-        <title>{{ title }}</title>
+        <title>{{title}}</title>
     </head>
     <body>
+        <h2>SIMILAR PRODUCTS TO<h2>
+        <h2>ASIN: {{dat.asin}} Name: {{dat.title}}<h2>
         <ol>
         {% for item in data: %}
         <li style="color:black;font-size:17px;font-weight: bold">{{ item.title }}</li>
